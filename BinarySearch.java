@@ -13,9 +13,9 @@ import java.util.Scanner;
 public class BinarySearch {
 
 	public static int binarySearch(int array[], int start, int end, int searchKey) {
-		if(start < end) {
+		if(start <= end) {
 
-			int mid = (start + (end-start))/2;
+			int mid = start + (end-start)/2;
 
 			if(array[mid] == searchKey)
 				return mid;
